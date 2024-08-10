@@ -36,13 +36,23 @@
             <a href="https://note.com/inte_beef/" target="_blank">Note</a>
             <a href="https://qiita.com/inte" target="_blank">Qiita</a>
         </div>
+
+        <div class="fortune-teller">
+            <button id="fortuneButton">占う</button>
+            <p id="fortuneResult" style="display: none;">大凶</p>
+        </div>
     </div>
+
     <script>
         function getRandomSixDigitNumber() {
             return Math.floor(100000 + Math.random() * 900000);
         }
 
         document.getElementById('randomNumber').innerText = `あなたに新鮮な6桁の乱数をプレゼント！${getRandomSixDigitNumber()}`;
+
+        document.getElementById('fortuneButton').addEventListener('click', function() {
+            document.getElementById('fortuneResult').style.display = 'block';
+        });
     </script>
 </body>
 </html>
