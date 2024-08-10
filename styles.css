@@ -56,7 +56,19 @@ table.achievements td {
     text-decoration: underline;
 }
 
-.achievements li {
+.fortune-teller {
+    margin-top: 30px;
+}
+
+#fortuneButton {
     font-size: 1.2em;
-    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#fortuneResult {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
 }
