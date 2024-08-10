@@ -56,7 +56,27 @@
 
         document.getElementById('randomNumber').innerText = `あなたに新鮮な6桁の乱数をプレゼント！${getRandomSixDigitNumber()}`;
 
+        const upperPhrases = [
+            "荒くれの", "ポテト", "アジアン", "怒涛の", "ぱぷ", "ぞんぞんの",
+            "おやまの", "がってん", "ぼんじり的", "ヒューマン", "uncensored", 
+            "characteristic", "ポートガス・D・", "あっちぃな", "呉越同舟よりも",
+            "もりもりの", "ポストマニア", "だとしても", "ちょっとした", "才能ありげな",
+            "やっかいな", "Kiss of"
+        ];
+
+        const lowerPhrases = [
+            "ポテト", "蟻の巣", "からあげ", "からあげ定食", "からあげザウルス", "人",
+            "詰めパック", "ないわぁ～", "おいおい^^;", "ザウルス", "ぴす", "トゥントゥントゥン...",
+            "？", "友達", "惑星", "黒鍵コレクター", "サイダー割り", "未成年", "Death", 
+            "Society", "こんなことに時間を使うな", "(体験談)", ")i( ちょうちょ", "オットセイショー",
+            "胃捻転", "腸捻転", "捻転会", "お肉", "亀", "ぱぷぅぽん", 
+            "ｱｰｶｽｶｽｶｽｶｽｶｽｶｽｶｽｶｽｶｽｶｽ"
+        ];
+
         document.getElementById('fortuneButton').addEventListener('click', function() {
+            const upper = upperPhrases[Math.floor(Math.random() * upperPhrases.length)];
+            const lower = lowerPhrases[Math.floor(Math.random() * lowerPhrases.length)];
+            document.getElementById('fortuneResult').innerText = `${upper} ${lower}`;
             document.getElementById('fortuneResult').style.display = 'block';
         });
     </script>
