@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inte's webpage</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function updateVisitorCount() {
-            let count = localStorage.getItem('visitorCount') || 0;
-            count++;
-            localStorage.setItem('visitorCount', count);
-            document.getElementById('visitorCount').innerText = 'あなたは第' + count + '人目の訪問者！';
-        }
-        window.onload = updateVisitorCount;
-    </script>
 </head>
 <body>
     <div class="container">
@@ -25,6 +16,26 @@
             <li>none</li>
             <li>none</li>
         </ul>
+
+        <table class="achievements">
+            <thead>
+                <tr>
+                    <th>日付</th>
+                    <th>成果物・出来事</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-08-07</td>
+                    <td>訪問者数の表示を削除，新鮮な6桁の乱数を追加</td>
+                </tr>
+                <tr>
+                    <td>2024-08-04</td>
+                    <td>このページを公開</td>
+                </tr>
+            </tbody>
+        </table>
+        
         <div class="social-links">
             <a href="https://github.com/inte-nent" target="_blank">GitHub</a>
             <a href="https://twitter.com/inte_curry" target="_blank">Twitter(現X)</a>
