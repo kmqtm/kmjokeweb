@@ -1,4 +1,4 @@
-# inte-nent.github.io
+# km.github.io
 My new webpage!
 Get access from the URL below.
-https://inte-nent.github.io/
+https://km.github.io/
